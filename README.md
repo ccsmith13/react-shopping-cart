@@ -112,23 +112,17 @@ const { products, addItem } = useContext(ProductContext);
 
 **STEP 5 - Create the CartContext**
 
-- Now that we have refactored our `Products` component to utilize `Context API` let's refactor our `Cart` and `Navigation` Component to use `Context API` as well.
+- Now that we have refactored our `Products` component to utilize `Context API` let's refactor our `Cart` and `Navigation` Component to use `Context API` as well. To start, create a new file in our contexts folder named `CartContext.js`, this context is going to be utilized by our `ShoppingCart` and `Navigation` component. Inside of our new `CartContext` import `createContext` and create a new context named `CartContext`. DONE 
 
-- To start create a new file in our contexts folder named `CartContext.js`, this context is going to be utilized by our `ShoppingCart` and `Navigation` component.
+**STEP 6 - Providing data with CartContext**
 
-- Inside of our new `CartContext` import `createContext` and create a new context named `CartContext`.
+- Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider. DONE 
 
-**STEP 5 - Providing data with CartContext**
+- Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state. DONE
 
-- Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
+- Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components. Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly. DONE
 
-- Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state.
-
-- Now that we're providing our cart data, we can start to refactor our `Navigation` and `ShoppingCart` components.
-
-- Let's start with our `ShoppingCart` component first. Go ahead and refactor the `ShoppingCart` route to no longer use render props. This will throw us an error, but we'll be able to resolve it quickly.
-
-- While were at it let's go ahead and remove the props from our navigation as well.
+- While were at it let's go ahead and remove the props from our navigation as well. DONE
 
 **STEP 7 - The final stretch**
 
