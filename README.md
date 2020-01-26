@@ -54,11 +54,11 @@ DONE
 
 **STEP 2 - Creating ProductContext**
 
-- In `src`, create a new folder named `contexts`, this folder is going to be used to hold all of `context objects` we create.
+- In `src`, create a new folder named `contexts`, this folder is going to be used to hold all of `context objects` we create. DONE
 
-- Inside that folder create a new file named `ProductContext.js`
+- Inside that folder create a new file named `ProductContext.js` DONE 
 
-- In this file, import the `createContext` function from the react library and create our `ProductContext`.
+- In this file, import the `createContext` function from the react library and create our `ProductContext`. DONE 
 
 **STEP 3 - Providing data with ProductContext**
 
