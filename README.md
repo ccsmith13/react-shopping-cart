@@ -92,11 +92,9 @@ DONE
 
 **STEP 4 - Consuming data with ProductContext**
 
-- Now that our `ProductContext` is now providing data we can finally consume it! To do so let's head over to our `Products` component and import the `useContext` hook as well as our `ProductContext`.
+- Now that our `ProductContext` is now providing data we can finally consume it! To do so let's head over to our `Products` component and import the `useContext` hook as well as our `ProductContext`. DONE
 
-- In the component, call the `useContext` hook and pass in the context object we want to use into it.
-
-- When we do this, `useContext` is going to return value passed by our `ProductContext` Provider `value` prop. In our case we're getting back an object with two properties. A `products` property and a `addItem` property. We can go ahead and destructure those.
+- In the component, call the `useContext` hook and pass in the context object we want to use into it. When we do this, `useContext` is going to return value passed by our `ProductContext` Provider `value` prop. In our case we're getting back an object with two properties. A `products` property and a `addItem` property. We can go ahead and destructure those. DONE
 
 ```js
 const { products, addItem } = useContext(ProductContext);
@@ -110,7 +108,7 @@ const { products, addItem } = useContext(ProductContext);
   - Remove it from the products map
   - Remove it from addItem prop
 
-- Now our `Products` component is getting it's data solely from `Context API` 😃.
+- Now our `Products` component is getting it's data solely from `Context API` 😃. DONE 
 
 **STEP 5 - Create the CartContext**
 
