@@ -126,32 +126,30 @@ const { products, addItem } = useContext(ProductContext);
 
 **STEP 7 - The final stretch**
 
-- Our cart data is now being provided to us from our `CartContext` time to consume it!
+- Our cart data is now being provided to us from our `CartContext` time to consume it! First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`. DONE 
 
-- First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
+- Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart. DONE
 
-- Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
-
-- Inside of our component we now need to remove all instances of props.
+- Inside of our component we now need to remove all instances of props. DONE
 
   - Remove the `props` parameter
   - Remove the `props` portion in our `getCartTotal` function
   - Remove `props` when we're mapping over our cart
 
-- Time to do the same thing for our `Navigation` component.
+- Time to do the same thing for our `Navigation` component. DONE
   - First import the `useContext` hook and our `CartContext`
   - Next, pass our `CartContext` to the `useContext` hook and assign it to a variable named cart.
   - Lastly we need to remove all instances of `props`
     - Remove `props` from our parameters
     - Remove `props` from our cart length
 
-We have now successfully converted our application into using `Context API` 🔥
+We have now successfully converted our application into using `Context API` 🔥 DONE
 
 ## _MVP Requirements:_
 
-- Create a `ProductContext` and a `CartContext`
-- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
-- Consume data using the `useContext` hook from `ProductContext` and `CartContext`
+- Create a `ProductContext` and a `CartContext` DONE
+- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components DONE 
+- Consume data using the `useContext` hook from `ProductContext` and `CartContext` DONE
 
 ## Stretch Problems
 
