@@ -16,15 +16,19 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
-		let currentCart = cart;
+		let currentCart = cart.slice();
 		currentCart.push(item);
 		setCart(currentCart);
 	};
 
 	const removeItem = item => {
-		let currentCart = cart;
-		let itemIndex = item.key - 1;
+		//console.log('remove item function is being called. here is the item being passed in:', item)
+		let currentCart = cart.slice();
+		//console.log('current cart in the remove item function', currentCart);
+		let itemIndex = currentCart.indexOf(item);
 		currentCart.splice(itemIndex, 1);
+		setCart(currentCart);
+		//console.log('final cart leaving the remove item function', cart);
 	}
 
 	return (
